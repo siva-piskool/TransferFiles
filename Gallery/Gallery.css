@@ -1,0 +1,15 @@
+h2{
+  font-size: 24px;
+}
+.ril-image-current{
+border: 8px solid rgba(0,0,0,0.5);
+}
+@media(min-width:576px)and (max-width:991px){
+  .col-sm-6{
+    flex:0 0 50%;
+    max-width: 50%;
+  }
+}
+.pointer{
+  cursor: pointer;
+}

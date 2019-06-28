@@ -1,0 +1,9 @@
+.ril-image-current {
+    border: 8px solid #fff !important;
+}
+.pointer >.img-fluid{
+    border: 6px solid #ccc;
+}
+.ril__toolbarLeftSide{
+    margin:auto;
+}
