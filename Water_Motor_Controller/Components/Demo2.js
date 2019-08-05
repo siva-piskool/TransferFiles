@@ -10,7 +10,11 @@ class Demo2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "wifi"
+      name: "wifi",
+      btn1:false,
+      btn2:false,
+      btn3:false,
+      btn4:false,
     };
   }
 
@@ -33,20 +37,21 @@ class Demo2 extends Component {
   render() {
     return (
       <View>
-        
         <View>{this.renderComponent(this.state.name)}</View>
         <View styles={styles.btncontainer}>
         <View style={styles.button}>
         <Button
           title="1"
+          disabled={this.state.btn1}
           onPress={() => {
-            this.setState({ name: "wifi" });
+            this.setState({ name: "wifi",btn1:true,btn2:false,btn3:false, btn4:false });
           }}
         />
         <Button
           title="2"
+          disabled={this.state.btn2}
           onPress={() => {
-            this.setState({ name: "Water-Level" });
+            this.setState({ name: "Water-Level",btn2:true,btn1:false,btn3:false, btn4:false });
           }}
         />
         </View> 
@@ -55,14 +60,16 @@ class Demo2 extends Component {
           <View style={styles.button}>
             <Button
               title="3"
+              disabled={this.state.btn3}
               onPress={() => {
-                this.setState({ name: "sys-info" });
+                this.setState({ name: "sys-info",btn1:false,btn2:false,btn3:true, btn4:false });
               }}
             />
             <Button
               title="4"
+              disabled={this.state.btn4}
               onPress={() => {
-                this.setState({ name: "Controller-Config" });
+                this.setState({ name: "Controller-Config",btn1:false,btn2:false,btn3:false, btn4:true });
               }}
             />
           </View>
