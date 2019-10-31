@@ -1,2 +1,2 @@
 # TransferFiles
-This repo is to transfer files
+This branch is for developing PrintIdeas website.
