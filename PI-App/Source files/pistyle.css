@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+a {
+  color: rgba(255, 255, 255, 1.00);
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: rgba(242, 175, 44, 1.00);
+  text-decoration: underline;
+}
+.piheader {
+  display: grid;
+  grid-template-columns: 10% 60px 150px auto 10%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(85, 85, 85, 0.80);
+}
+.pilogo {
+  height: 50px;
+  width: 50px;
+}
+.pilogo-text-tagline {
+  /*display: none;*/
+}
+.pilogo-text {
+  font-size: 23px;
+  padding-top: 10px;
+}
+.pilogo-tagline {
+  font-size: 10px;
+  font-style: italic;
+}
+.piMT10 {
+  margin-top: 10px;
+}
+.piMT20 {
+  margin-top: 20px;
+}
+.pinav {
+  padding-top: 23px;
+}
+.pinav > nav > ul {
+  display: flex;
+  float: right;
+}
+.pinav > nav > ul > li {
+  list-style: none;
+  padding: 0px 5px;
+  margin: 2px 4px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.pihome-slides {}
+.pihome-slides > img {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  min-width: 639px;
+}
+.piheader-img > img {
+  min-height: 180px;
+  min-width: 634px;
+  width: 100%;
+  height: auto;
+}
+.piheader-txt {
+  text-align: center;
+  margin-top: -100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  height: auto;
+  min-height: 100px;
+  color: rgba(255, 0, 0, 0.72);
+  font-size: 18px;
+}
+.piselected {
+  color: rgba(242, 175, 44, 1.00);
+}
+.piabout {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  color: #333;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
