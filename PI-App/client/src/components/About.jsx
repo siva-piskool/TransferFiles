@@ -4,7 +4,7 @@ export const About = () => {
     <div>
       <div className="piheader-img">
         <img src={require("../../public/images/about-pi.jpg")} alt="" />
-        <div class="piheader-txt">About</div>
+        <div class="piheader-txt">… {"{ one stop solution of end-to-end branding }"} …</div>
       </div>
       <div className="piabout piMT20">
         <div></div>
