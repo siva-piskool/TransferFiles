@@ -17,8 +17,9 @@ export const About = () => {
           digital marketing, logos, flyers, brochures, presentations and much
           more...
         </div>
+        <div></div>
       </div>
-      <div></div>
+      
     </div>
   );
 };
