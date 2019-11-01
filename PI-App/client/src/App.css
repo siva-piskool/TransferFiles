@@ -84,21 +84,26 @@ a:hover {
 }
 
 .piheader-img>img {
-  min-height: 180px;
-  min-width: 634px;
+  /* min-height: 180px;
+   height: auto;
+  min-width: 634px; */
   width: 100%;
-  height: auto;
-}
+ }
 
 .piheader-txt {
-  text-align: center;
+  /* text-align: center;
   margin-top: -100px;
   margin-left: 20px;
   margin-right: 20px;
   height: auto;
-  min-height: 100px;
+  min-height: 100px; */
   color: rgba(255, 0, 0, 0.72);
   font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .piselected {
@@ -200,3 +205,9 @@ a:hover {
     transform: none;
   }
 }
+/*new common styles*/
+.piheader-img {
+  position: relative;
+  text-align: center;
+  margin-top:70px;
+  }
