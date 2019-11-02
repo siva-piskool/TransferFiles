@@ -28,6 +28,7 @@ a:hover {
   width: 100%;
   color: #fff;
   background-color: rgba(85, 85, 85, 0.80);
+  z-index:2;
 }
 
 .pilogo {
