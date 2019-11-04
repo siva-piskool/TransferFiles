@@ -4,20 +4,19 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 a {
-  color: rgba(255, 255, 255, 1.00);
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   background-color: transparent;
+  outline: none;
 }
-
 a:hover {
-  color: rgba(242, 175, 44, 1.00);
-  text-decoration: underline;
+  color: rgba(242, 175, 44, 1);
+  text-decoration: none;
 }
-
 .piheader {
   display: grid;
   grid-template-columns: 10% 60px 150px auto 10%;
@@ -27,8 +26,9 @@ a:hover {
   height: 70px;
   width: 100%;
   color: #fff;
-  background-color: rgba(85, 85, 85, 0.80);
-  z-index:2;
+  background-color: rgba(85, 85, 85, 0.8);
+  z-index: 2;
+  /* min-width: 540px; */
 }
 
 .pilogo {
@@ -57,17 +57,20 @@ a:hover {
 .piMT20 {
   margin-top: 20px;
 }
+.piMT70 {
+  margin-top: 70px;
+}
 
 .pinav {
   padding-top: 23px;
 }
 
-.pinav>nav>ul {
+.pinav > nav > ul {
   display: flex;
   float: right;
 }
 
-.pinav>nav>ul>li {
+.pinav > nav > ul > li {
   list-style: none;
   padding: 0px 5px;
   margin: 2px 4px;
@@ -77,20 +80,20 @@ a:hover {
 
 /* .pihome-slides {} */
 
-.pihome-slides>img {
+.pihome-slides > img {
   width: 100%;
   height: auto;
   min-height: 300px;
   min-width: 639px;
 }
 
-.piheader-img>img {
-  /* min-height: 180px;
+.piheader-img > img {
+  
    height: auto;
-  min-width: 634px; */
+  min-width: 634px;
   width: 100%;
   min-height: 180px;
-  }
+}
 
 .piheader-txt {
   /* text-align: center;
@@ -109,7 +112,7 @@ a:hover {
 }
 
 .piselected {
-  color: rgba(242, 175, 44, 1.00);
+  color: rgba(242, 175, 44, 1);
 }
 
 .piabout {
@@ -117,7 +120,7 @@ a:hover {
   grid-template-columns: 10% auto 10%;
   color: #333;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* css toggle navigation */
@@ -125,18 +128,22 @@ a:hover {
 #menuToggle {
   display: none;
 }
-
+@media(max-width:420px){
+  #menuToggle{
+    left:18px !important;
+  }
+}
 @media screen and (max-width: 720px) {
   .hide {
     display: none !important;
   }
   #menuToggle {
     display: flex;
-    float: right; 
+    float: right;
     display: block;
     position: relative;
     top: 4px;
-    left: 17px;
+    left: 35px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -157,15 +164,16 @@ a:hover {
   }
   #menuToggle span {
     display: block;
-    width: 33px;
-    height: 4px;
+    width: 26px;
+    height: 2px;
     margin-bottom: 5px;
     position: relative;
     background: #cdcdcd;
     border-radius: 3px;
     z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    transform-origin: 3px -1px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
   #menuToggle span:first-child {
     transform-origin: 0% 0%;
@@ -173,22 +181,22 @@ a:hover {
   #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
-  #menuToggle input:checked~span {
+  #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #636363;
   }
-  #menuToggle input:checked~span:nth-last-child(3) {
+  #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
-  #menuToggle input:checked~span:nth-last-child(2) {
+  #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
   #menu {
     position: absolute;
     width: 250px;
-    margin: -54px 0 0 -242px;
+    margin: -54px 0 0 -180px;
     padding: 40px;
     padding-top: 75px;
     background: black;
@@ -196,14 +204,14 @@ a:hover {
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     opacity: 0.9;
   }
   #menu li {
     padding: 10px 0;
     font-size: 18px;
   }
-  #menuToggle input:checked~ul {
+  #menuToggle input:checked ~ ul {
     transform: none;
   }
 }
@@ -211,5 +219,5 @@ a:hover {
 .piheader-img {
   position: relative;
   text-align: center;
-  margin-top:70px;
-  }
+  margin-top: 70px;
+}

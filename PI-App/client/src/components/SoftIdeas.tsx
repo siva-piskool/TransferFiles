@@ -1,10 +1,11 @@
-import React from "react";
-export const About = () => {
-  return (
-    <div>
-      <div className="piheader-img">
+import * as React from 'react';
+
+export const SoftIdeas = () =>{
+    return(
+        <div>
+            <div className="piheader-img">
         <img src={require("../../public/images/about-pi.jpg")} alt="" />
-        <div class="piheader-txt">… {"{ one stop solution of end-to-end branding }"} …</div>
+        <div className="piheader-txt">Soft Ideas</div>
       </div>
       <div className="piabout piMT20">
         <div></div>
@@ -19,7 +20,6 @@ export const About = () => {
         </div>
         <div></div>
       </div>
-      
-    </div>
-  );
-};
+        </div>
+    );
+}

@@ -3,20 +3,24 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry:{ index:'./src/index.tsx',
+  another: './src/another-module.jsx',},
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname + 'dist')
   },
+  optimization: {
+    splitChunks: {
+         chunks: 'all',
+        },
+       },
+resolve: {
+        extensions: [".ts", ".tsx", ".js", ".json"]
+    },
   module: {
     rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
       {
         test: /\.html$/,
         use: [

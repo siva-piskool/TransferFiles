@@ -1,12 +1,12 @@
-import React from 'react';
+import * as React from 'react';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom';
-import {Header} from './common/Header.jsx';
-import {Home} from './components/Home.jsx';
-import {About} from './components/About.jsx';
-import {Works} from './components/Works.jsx';
-import {SoftIdeas} from './components/SoftIdeas.jsx';
-import {Contact} from './components/Contact.jsx';
-import {PageNotFound} from './components/PageNotFound.jsx';
+import {Header} from './common/Header';
+import {Home} from './components/Home';
+import {About} from './components/About';
+import {Works} from './components/Works';
+import {SoftIdeas} from './components/SoftIdeas';
+import {Contact} from './components/Contact';
+import {PageNotFound} from './components/PageNotFound';
 
 export const App = () =>{
     return(

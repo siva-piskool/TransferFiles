@@ -1,11 +1,10 @@
-import React from 'react';
-
-export const SoftIdeas = () =>{
-    return(
-        <div>
-            <div className="piheader-img">
+import * as React from "react";
+export const About = () => {
+  return (
+    <div>
+      <div className="piheader-img">
         <img src={require("../../public/images/about-pi.jpg")} alt="" />
-        <div class="piheader-txt">Soft Ideas</div>
+        <div className="piheader-txt">… {"{ one stop solution of end-to-end branding   deliberations into designs. Yes, you read it right. Any brand iundone without the branding material ensembles and that is when wcome into the p }"} …</div>
       </div>
       <div className="piabout piMT20">
         <div></div>
@@ -20,6 +19,7 @@ export const SoftIdeas = () =>{
         </div>
         <div></div>
       </div>
-        </div>
-    );
-}
+      
+    </div>
+  );
+};
