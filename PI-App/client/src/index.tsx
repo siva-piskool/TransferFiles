@@ -1,8 +1,4 @@
 import * as React from "react";
 import {render} from "react-dom";
-import {App} from "./App";
-import './App.css';
-
-
-
-render(<App />, document.getElementById('root'));
+import { About } from "./components/About";
+render(<About />, document.getElementById('root'));

@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -45,6 +46,7 @@ resolve: {
       template: "./public/index.html",
       filename: "./index.html"
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin()
   ]
 }
