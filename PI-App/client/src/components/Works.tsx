@@ -5,7 +5,8 @@ export const Works = () => {
     <div>
       <div className="piheader-img">
         <img src={require("../../public/images/about-pi.jpg")} alt="" />
-        <div className="piheader-txt">Works</div>
+        <div className="piheader-txt">
+        <div className="piM20">Works</div></div>
       </div>
       <div className="piabout piMT20">
         <div></div>
