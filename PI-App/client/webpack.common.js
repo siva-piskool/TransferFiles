@@ -46,7 +46,6 @@ resolve: {
       template: "./public/index.html",
       filename: "./index.html"
     }),
-    new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin()
   ]
 }
