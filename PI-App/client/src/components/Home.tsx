@@ -2,7 +2,7 @@ import * as React from 'react';
 export const Home = () => {
     return (
         <React.Fragment>
-           <div className="piMT70">SlideShow</div>
+           <div className="piMT70 piheader">SlideShow</div>
            <div className="piabout piMT20">
                 <div></div>
                 <div>At Print Ideas, we are impulsively inclined towards transforming your deliberations into designs. Yes, you read
