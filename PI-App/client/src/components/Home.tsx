@@ -1,8 +1,11 @@
 import * as React from 'react';
+import Slides from '../components/Slides'
 export const Home = () => {
     return (
         <React.Fragment>
-           <div className="piMT70 piheader">SlideShow</div>
+           <div className="piMT70">
+           <Slides/>
+           </div>
            <div className="piabout piMT20">
                 <div></div>
                 <div>At Print Ideas, we are impulsively inclined towards transforming your deliberations into designs. Yes, you read

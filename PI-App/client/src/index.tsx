@@ -5,4 +5,4 @@ import { About } from "./components/About";
 import { App } from "./App";
 import Slides from "./components/Slides";
 
-render(<Slides />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));
