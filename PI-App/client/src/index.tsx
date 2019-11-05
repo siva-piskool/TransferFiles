@@ -4,5 +4,6 @@ import './App.css';
 import { About } from "./components/About";
 import { App } from "./App";
 import Slides from "./components/Slides";
+import Form from "./components/Form";
 
-render(<App />, document.getElementById('root'));
+render(<Form />, document.getElementById('root'));

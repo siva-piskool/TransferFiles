@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+label {
+  margin: 10px;
+  display: inline-block;
+}
+.btn{
+  margin:10px
+}
+.btn > input{
+    width:100%;
+    margin-top:10px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+textarea{
+    height:200px;
+}
+.row {
+  margin: 10px;
+}
+.col-25 {
+  width: 25%;
+  float: left;
+ }
+.col-75 {
+  width: 70%;
+  float: left;
+  margin:10px;
+ }
+.row:after {
+  content: "";
+  display: table;
+  clear: "both";
+  margin:10px;
+}
+@media (max-width: 719px) {
+  .col-25,
+  .col-75,
+  input {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
