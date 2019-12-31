@@ -3,7 +3,7 @@ import Slides from '../components/Slides'
 export const Home = () => {
     return (
         <React.Fragment>
-           <div className="piMT70 pihome-slides">
+           <div className="piMT70  pihome-slides">
            <Slides/>
            </div>
            <div className="piabout piMT20">

@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Form.css";
 const Form: React.FC = () => {
-  const [data] = React.useState([
+  const [data, setData] = React.useState([
     { label: "Name :", for: "cname", type: "text", plchdlr: "Enter Your Name" },
     {
       label: "Contact Number :",
@@ -41,9 +41,9 @@ const Form: React.FC = () => {
             <textarea id="description" placeholder="write something here" />
           </div>
         </div>
-       <div className="btn">
-<input type="submit" value="Submit" />
-       </div>
+        <div className="btn">
+          <input type="submit" value="Submit" />
+        </div>
       </form>
     </div>
   );

@@ -49,9 +49,6 @@
   font-size: 14px;
   text-decoration: none;
 }
-.pinav > nav a:active{
-  color: yellow;
-}
 /* css toggle navigation */
 
 #menuToggle {

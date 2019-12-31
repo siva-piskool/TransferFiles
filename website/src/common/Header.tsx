@@ -1,7 +1,6 @@
 import * as React from 'react';
 import './Header.css';
 import { NavLink} from 'react-router-dom';
-
 export const Header:React.FC<{}> = () => {
     return (
         <div className="piheader">
